@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".LoginActivity">
+    tools:context=".ui.activity.LoginActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_login"
@@ -49,6 +49,7 @@
                 app:layout_constraintTop_toBottomOf="@id/imageLogin">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/login" />
@@ -66,6 +67,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/pass"

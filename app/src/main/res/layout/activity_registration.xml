@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".RegistrationActivity">
+    tools:context=".ui.activity.RegistrationActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_login"
@@ -37,6 +37,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/login" />
@@ -53,6 +54,7 @@
                 app:layout_constraintTop_toBottomOf="@id/layoutLogin">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/nick" />
@@ -70,6 +72,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/pass"
@@ -88,6 +91,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/repPass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/rep_pass"
@@ -137,6 +141,7 @@
                 android:layout_marginTop="24dp"
                 android:text="@string/reg"
                 app:backgroundTint="@color/purple"
+                android:textColor="@color/white"
                 app:cornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -150,6 +155,7 @@
                 android:fontFamily="sans-serif"
                 android:text="@string/conf"
                 android:textSize="12sp"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/buttonSubmitRegister" />
